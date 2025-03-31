@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .hero {
+            background: url('https://lh3.googleusercontent.com/p/AF1QipO3cVHkvvwi1z_wdi96xTSBnV4m9CQpYcEyxgfv=s1360-w1360-h1020') no-repeat center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .about,
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service {
+            background: lightgray;
+            padding: 15px;
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .services {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our School</h1>
+    </header>
+    <section class="hero">
+        <h2>Empowering Students for a Bright Future</h2>
+    </section>
+    <div class="container">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Our school is committed to providing high-quality education and Encouraging a love for learning.</p>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service">Quality Education</div>
+            <div class="service">Experienced Teachers</div>
+            <div class="service">Sports & Extracurricular</div>
+            <div class="service">Modern Facilities</div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Our School. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

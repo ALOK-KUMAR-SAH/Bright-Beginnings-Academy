@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Landing Page</title>
+    <title>Central Public School</title>
     <style>
         * {
             margin: 0;
@@ -15,6 +15,13 @@
 
         body {
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
         }
 
         header,
@@ -32,6 +39,21 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 25px;
+            border-radius: 8px;
+            z-index: 0;
         }
 
         .slides {
@@ -58,6 +80,10 @@
 
             66.66% {
                 transform: translateX(-200%);
+            }
+
+            100% {
+                transform: translateX(0%);
             }
         }
 
@@ -92,9 +118,10 @@
 
 <body>
     <header>
-        <h1>Welcome to Our School</h1>
+        <h1>Welcome to our School</h1>
     </header>
     <section class="hero">
+        <div class="overlay">Central Public School,tajpur road,samastipur</div>
         <div class="slides">
             <img src="https://tse4.mm.bing.net/th?id=OIP.dfRQVq9fwdfWPpIitJerBgHaE8&pid=Api" alt="Slide 1">
             <img src="https://thumbs.dreamstime.com/z/group-elementary-school-kids-sitting-school-steps-71530399.jpg"
@@ -115,7 +142,7 @@
         </div>
     </section>
     <footer>
-        <p>&copy; 2025 Our School. All rights reserved.</p>
+        <p>&copy; 2025 Central Public School. All rights reserved.</p>
     </footer>
 </body>
 
